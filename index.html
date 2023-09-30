@@ -50,15 +50,29 @@
     .food{
         padding: 30px;
     }
-    .map{
-        width: 300px;
-        height: 500px;
-        background-color: aliceblue;
-        margin: 0 auto;
+    .grid{
+        display: grid;
+    }
+
+    .grid-3-columns{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid-2-columns{
+        grid-template-columns: 1fr 1fr;
     }
     .store{
-        height: 250px;
-        color: white;
+        height: 150px;
+        width: 300px;
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:0;
+        padding: 0;
+        
+        
+    }
+    .store-pic1{
+        width: 100%;
+        aspect-ratio: 1/1;
     }
     
     
@@ -113,30 +127,43 @@
                </div>
                </div>
     </div>
-    <div class="map-page">
+    
             <h1>Most Popular Restaurants in Town</h1>
-            <div class="row">
-                <div class="col-4 map">
-                        <div class="row store">
-                            <p class="store-name">Restaurant 1</p>
-                            
+            <div class="grid grid-3-columns">
+            <div class="card">
+                <div class="card-header grid grid-2-columns">
+                        <div class="store">
+                        <img src="https://images.unsplash.com/photo-1591214896508-22fc74d84a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" class="store-pic1">
+                        
+                        <div class="store-location">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1562168745754!2d-96.95966442508617!3d32.920470673604015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2851c2518fdf%3A0xf931d11ede97410!2sFortune%20House%20Chinese%20Cuisine!5e0!3m2!1sen!2sus!4v1696106322277!5m2!1sen!2sus" width="150px" height="150px" style="margin: 0;"></iframe>
+                        </div>  
                         </div>
-                        <div class="row location">
-                            <p>Map 1</p>
+                        <div class="intro">
+                            <p>restaurant 1</p>
                         </div>
                 </div>
-                 <div class="col-4 map">
+                 <div class="col map">
                     <div class="row store">
-                        <img src="https://images.unsplash.com/photo-1579027989536-b7b1f875659b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80">
+                        <div class="col">
                             <p>Restaurant 1</p>
+                        </div>
+                        <div class="col">
+                            <p>Restaurant 1</p>
+                        </div>
                         </div>
                         <div class="row location">
                             <p>Map 1</p>
                         </div>
                 </div>
-                <div class="col-4 map">
+                <div class="col map">
                      <div class="row store">
+                        <div class="col store-pic">
                             <p>Restaurant 1</p>
+                        </div>
+                        <div class="col">
+                            <p>Restaurant 1</p>
+                        </div>
                         </div>
                         <div class="row location">
                             <p>Map 1</p>
