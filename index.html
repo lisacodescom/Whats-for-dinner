@@ -38,9 +38,9 @@
     .content p{
         margin-top: 10px;
     }
-    .container{
-        width: 1400px;
-        margin-top: 50px;
+    
+    .food-page{
+        margin: 50px 0;
     }
     .food-pic{
         width: 350px;
@@ -50,29 +50,64 @@
     .food{
         padding: 30px;
     }
-    .grid{
-        display: grid;
+    .container{
+        width: 1600px;
+        
+        background-color:  #f8f8f8;
+        margin: 0 auto;
     }
+    .card-section{
+        max-width: 100%;
+        width: 1400px;
+        margin: 0 auto;
+        margin-left: 10px;
+        padding: 70px;
+        padding-top: 40px;
+       background-color: white;
+        
+    }
+    .title{
+        margin-bottom: 50px;
 
+    }
     .grid-3-columns{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        margin:0 auto;
+        border-radius: 10px;
+    }
+    .store-map{
+        width: 300px;
+        background-color: white;
     }
     .grid-2-columns{
-        grid-template-columns: 1fr 1fr;
-    }
-    .store{
-        height: 150px;
-        width: 300px;
         display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-gap:0;
-        padding: 0;
-        
-        
+        grid-template-columns: 1fr 1fr;
+        width: 300px;
+        height: 150px;
+        column-gap: 0;
+        margin-bottom: 0;
+    }
+    .grid{
+        grid-gap: 0;
     }
     .store-pic1{
-        width: 100%;
-        aspect-ratio: 1/1;
+        background-image: url(https://images.unsplash.com/photo-1591214896508-22fc74d84a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80);
+        background-size: cover;
+        background-position: center;
+        width: 150px;
+        height:150px;
+    }
+    .card-body{
+        padding:15px;
+    }
+    .btn-secondary{
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
     }
     
     
@@ -128,51 +163,71 @@
                </div>
     </div>
     
-            <h1>Most Popular Restaurants in Town</h1>
-            <div class="grid grid-3-columns">
-            <div class="card">
-                <div class="card-header grid grid-2-columns">
-                        <div class="store">
-                        <img src="https://images.unsplash.com/photo-1591214896508-22fc74d84a75?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" class="store-pic1">
-                        
-                        <div class="store-location">
-                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1562168745754!2d-96.95966442508617!3d32.920470673604015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2851c2518fdf%3A0xf931d11ede97410!2sFortune%20House%20Chinese%20Cuisine!5e0!3m2!1sen!2sus!4v1696106322277!5m2!1sen!2sus" width="150px" height="150px" style="margin: 0;"></iframe>
-                        </div>  
+    <div class="card-section">
+        <h2 class="text-center title">My Favorite Restaurants in Town</h2>
+        <div class="grid-3-columns grid">
+                <div class="store-map">
+                    <div class="card-header grid grid-2-columns">
+                        <div class="store-pic1">
                         </div>
-                        <div class="intro">
-                            <p>restaurant 1</p>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1562168745754!2d-96.95966442508617!3d32.920470673604015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2851c2518fdf%3A0xf931d11ede97410!2sFortune%20House%20Chinese%20Cuisine!5e0!3m2!1sen!2sus!4v1696106322277!5m2!1sen!2sus" width="150px" height="150px" style="margin: 0;"></iframe>
                         </div>
-                </div>
-                 <div class="col map">
-                    <div class="row store">
-                        <div class="col">
-                            <p>Restaurant 1</p>
-                        </div>
-                        <div class="col">
-                            <p>Restaurant 1</p>
-                        </div>
-                        </div>
-                        <div class="row location">
-                            <p>Map 1</p>
+                    </div>
+                        <div class="card-body">
+                        <h4>Fortune House</h4>
+                        <p>A lively all-day café with an outdoor terrace that serves everything you could want from breakfast and brunch to evening cocktails.
+                        </p>
+                        <h5>Address:</h5>
+                        <p>1A Rua Moeda</p>
+                            <a href="https://goo.gl/maps/15LZ4DUTtJWjDLMQ8" class="btn btn-secondary" target="_blank">
+                            Learn more
+                            </a>
                         </div>
                 </div>
-                <div class="col map">
-                     <div class="row store">
-                        <div class="col store-pic">
-                            <p>Restaurant 1</p>
+                        <div class="store-map">
+                    <div class="card-header grid grid-2-columns">
+                        <div class="store-pic1">
                         </div>
-                        <div class="col">
-                            <p>Restaurant 1</p>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1562168745754!2d-96.95966442508617!3d32.920470673604015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2851c2518fdf%3A0xf931d11ede97410!2sFortune%20House%20Chinese%20Cuisine!5e0!3m2!1sen!2sus!4v1696106322277!5m2!1sen!2sus" width="150px" height="150px" style="margin: 0;"></iframe>
                         </div>
-                        </div>
-                        <div class="row location">
-                            <p>Map 1</p>
+                    </div>
+                        <div class="card-body">
+                        <h4>Fortune House</h4>
+                        <p>A lively all-day café with an outdoor terrace that serves everything you could want from breakfast and brunch to evening cocktails.
+                        </p>
+                        <h5>Address:</h5>
+                        <p>1A Rua Moeda</p>
+                            <a href="https://goo.gl/maps/15LZ4DUTtJWjDLMQ8" class="btn btn-secondary" target="_blank">
+                            Learn more
+                            </a>
                         </div>
                 </div>
+                        <div class="store-map">
+                    <div class="card-header grid grid-2-columns">
+                        <div class="store-pic1">
+                        </div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.1562168745754!2d-96.95966442508617!3d32.920470673604015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2851c2518fdf%3A0xf931d11ede97410!2sFortune%20House%20Chinese%20Cuisine!5e0!3m2!1sen!2sus!4v1696106322277!5m2!1sen!2sus" width="150px" height="150px" style="margin: 0;"></iframe>
+                        </div>
+                    </div>
+                        <div class="card-body">
+                        <h4>Fortune House</h4>
+                        <p>A lively all-day café with an outdoor terrace that serves everything you could want from breakfast and brunch to evening cocktails.
+                        </p>
+                        <h5>Address:</h5>
+                        <p>1A Rua Moeda</p>
+                            <a href="https://goo.gl/maps/15LZ4DUTtJWjDLMQ8" class="btn btn-secondary" target="_blank">
+                            Learn more
+                            </a>
+                        </div>
+                </div>   
         </div>
 
     </div>
     </div>
+    
     
 
 </body>
