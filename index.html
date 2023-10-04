@@ -16,7 +16,16 @@
      height: 100%;
      margin: 0;
     }
-
+    @media (max-width: 900px){ 
+         .grid-3-columns{
+            grid-template-columns: 1fr;
+    }
+        .links{
+            grid-template-columns: 1fr;
+            background-color: pink;
+        }
+}
+    
     .dinner{
         background-image: url(image/dinner.jpg);
         background-size: cover;
@@ -67,9 +76,10 @@
         max-width: 100%;
         width: 1400px;
         margin: 0 auto;
-        margin-left: 10px;
+        
         padding: 70px;
         padding-top: 40px;
+        
        
         
     }
@@ -149,9 +159,9 @@
     <h1>What's for Dinner?</h1>
     <p>When it's time for dinner, you always struggle on decideding what to eat.<br>Here are some ideas.
         Hope you enjoy your dinner!</p>
-    
     </div>
     </header>
+    
     <div class="container">
     <div class="food-page">
         <div class="food">
@@ -205,7 +215,7 @@ A taco is basically anything eaten on a soft tortilla, and there is an infinite 
     
     <div class="card-section">
         <h1 class="text-center title">My Favorite Restaurants in Town</h1>
-        <div class="grid-3-columns grid">
+        <div class="grid-3-columns">
                 <div class="store-map">
                     <div class="card-header grid grid-2-columns">
                         <div class="store-pic1">
@@ -225,7 +235,7 @@ A taco is basically anything eaten on a soft tortilla, and there is an infinite 
                             </a>
                         </div>
                 </div>
-                        <div class="store-map">
+                <div class="store-map">
                     <div class="card-header grid grid-2-columns">
                         <div class="store-pic2">
                         </div>
@@ -244,7 +254,7 @@ A taco is basically anything eaten on a soft tortilla, and there is an infinite 
                             </a>
                         </div>
                 </div>
-                        <div class="store-map">
+                <div class="store-map">
                     <div class="card-header grid grid-2-columns">
                         <div class="store-pic3">
                         </div>
@@ -290,6 +300,7 @@ A taco is basically anything eaten on a soft tortilla, and there is an infinite 
             <h4>About Me</h4>
             <p>Hello, I'm Lisa, a frontend developer based in Dallas. I love to explore great food in Dallas. If you are interested in exploring the city together, find me <a href="mailto:alisalove896@gmail.com">HERE💕</a> </p>
         </div> 
+    </div>
     </footer>
 
     
