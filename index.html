@@ -16,16 +16,6 @@
      height: 100%;
      margin: 0;
     }
-    @media (max-width: 900px){ 
-         .grid-3-columns{
-            grid-template-columns: 1fr;
-    }
-        .links{
-            grid-template-columns: 1fr;
-            background-color: pink;
-        }
-}
-    
     .dinner{
         background-image: url(image/dinner.jpg);
         background-size: cover;
@@ -70,6 +60,7 @@
         width: 100%;
         background-size: cover;
         background-color:  #f8f8f8;
+        margin-top: 30px;
         
     }
     .card-section{
@@ -150,6 +141,15 @@
         color: black;
     }
     
+        @media (max-width: 900px){ 
+         .grid-3-columns{
+            grid-template-columns: 1fr;
+    }
+     footer .links{
+            display: block;
+
+        }
+}
     
     
 </style>
@@ -296,6 +296,7 @@ A taco is basically anything eaten on a soft tortilla, and there is an infinite 
             <a href="https://dallas.eater.com/maps/best-dallas-restaurants-38-essential">The 38 Essential Dallas Restaurants</a><br>
             <a href="https://www.timeout.com/dallas/restaurants/best-restaurants-in-dallas">Best Restaurants in Dallas</a>
         </div>
+        <br>
         <div>
             <h4>About Me</h4>
             <p>Hello, I'm Lisa, a frontend developer based in Dallas. I love to explore great food in Dallas. If you are interested in exploring the city together, find me <a href="mailto:alisalove896@gmail.com">HERE💕</a> </p>
